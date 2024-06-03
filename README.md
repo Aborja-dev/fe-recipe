@@ -1,47 +1,103 @@
-# Astro Starter Kit: Minimal
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-```sh
-npm create astro@latest -- --template minimal
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+
+### Screenshot
+
+![](./public/screenshot.jpg)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://heartfelt-gelato-8a212d.netlify.app/)
+
+
+## My process
+
+### Built with
+
+- Astro
+- Astro compoenents
+- Tailwind
+- tailwind custom theme
+- Mobile-first workflow
+- [Astro](https://docs.astro.build/en/getting-started/) - JS library
+- [Tailwind](https://tailwindcss.com/) - For styles
+
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
+### What I learned
+
+I learned about Tailwind and how to create a custom theme, only modyfing the tailwind.config.msj file, im very impressed because tailwind have a great potential of customization. Also i learned about use a custom font, export an d load into the project
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+@font-face {
+  font-family: "Outfit";
+  src: url('/fonts/outfit/Outfit-VariableFont_wght.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "YoungSerif";
+  src: url('/fonts/young-serif/YoungSerif-VariableFont_wght.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+ }
+```
+```js
+theme: {
+		extend: {
+			fontFamily: {
+				'outfit': ['Outfit', 'sans-serif'],
+				'young-serif': ['YoungSerif', 'serif']
+			},
+			screens: {
+				'mobile': '375px',
+				'desktop': '1440px',
+			},
+			colors: {
+				colors: {
+					nutmeg: 'hsl(14, 45%, 36%)',
+					'dark-raspberry': 'hsl(332, 51%, 32%)',
+					white: 'hsl(0, 0%, 100%)',
+					'rose-white': 'hsl(330, 100%, 98%)',
+					eggshell: 'hsl(30, 54%, 90%)',
+					'light-grey': 'hsl(30, 18%, 87%)',
+					'wenge-brown': 'hsl(30, 10%, 34%)',
+					'dark-charcoal': 'hsl(24, 5%, 18%)',
+				},
+			}
+		},
+	},
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Useful resources
 
-## 🚀 Project Structure
+- [Creating a Custom Theme System With TailwindCSS](https://www.locofy.ai/blog/create-a-custom-theme-with-tailwindcss) - This helped me for undersatand how create a custom theme in tailwind.
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Author
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Frontend Mentor - [@Aborja-dev](https://www.frontendmentor.io/profile/Aborja-dev)
